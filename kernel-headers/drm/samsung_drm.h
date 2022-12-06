@@ -150,6 +150,7 @@ struct histogram_bins {
 struct exynos_drm_histogram_event {
   struct drm_event base;
   struct histogram_bins bins;
+  __u32 crtc_id;
 };
 enum exynos_prog_pos {
   POST_DQE,
